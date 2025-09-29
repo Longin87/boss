@@ -425,7 +425,7 @@ body {
     max-width: 420px;
     height: 144px;
     padding: 20px 27px;
-    
+
   }
 
   &__box {
@@ -445,5 +445,50 @@ body {
     padding: 10px;
     border: 1px solid vars.$color-accent;
     cursor: pointer;
+  }
+}
+
+.our-advantages {
+  margin-bottom: 150px;
+  background-color: vars.$color-background;
+
+  &__wrapper {
+    display: flex;
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 6px;
+    left: 40px;
+    max-width: 378px;
+    width: 100%;
+    height: 460px;
+  }
+
+  &__inner {
+    margin-top: 60px;
+    margin-bottom: 68px;
+    margin-left: auto;
+    padding-right: 18px;
+  }
+
+  &__title {
+    @extend %lora-400;
+    color: vars.$color-backgroud-text;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    column-count: 2;
+    column-gap: 80px;
+    list-style: inherit;
+  }
+
+  &__item {
+    color: vars.$color-backgroud-text;
+    margin-bottom: 30px;
   }
 }
