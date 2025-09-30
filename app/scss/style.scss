@@ -575,3 +575,74 @@ body {
     cursor: pointer;
   }
 }
+
+.appointment {
+  margin-bottom: 100px;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  &__title {
+    text-align: center;
+    @extend %lora-400;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 77px;
+  }
+
+  &__content {}
+
+  &__content-title {
+    @extend %lora-400;
+    color: vars.$color-text-muted;
+    font-size: 30px;
+    margin-bottom: 80px;
+    max-width: 390px;
+    text-transform: uppercase;
+  }
+
+  &__content-text {
+    color: vars.$color-text-muted;
+    @extend %opensans-700;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+  }
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid vars.$color-text-muted;
+    padding-bottom: 10px;
+
+    &::placeholder {
+      color: vars.$color-text-muted;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    color: vars.$color-backgroud-text;
+    background-color: vars.$color-accent;
+    padding: 12px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  &__img {
+    max-width: 580px;
+    width: 100%;
+  }
+}
